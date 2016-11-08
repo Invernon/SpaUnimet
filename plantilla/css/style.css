@@ -1,0 +1,528 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+/* Basic */
+
+	@media screen and (max-width: 480px) {
+
+		html, body {
+			min-width: 320px;
+		}
+
+	}
+
+	html {
+		height: 100%;
+	}
+
+	body {
+		height: 100%;
+		background-color: #ffffff;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)));
+		background-repeat: repeat,			no-repeat,			no-repeat;
+		background-size: 100px 100px, cover,				cover;
+		background-position: top left,		center center,		bottom center;
+		background-attachment: fixed,			fixed,				fixed;
+	}
+
+	
+
+/* Type */
+
+	body, input, select, textarea {
+		color: #414f57;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 14pt;
+		font-weight: 300;
+		line-height: 2;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			body, input, select, textarea {
+				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			body, input, select, textarea {
+				font-size: 10pt;
+				line-height: 1.75;
+			}
+
+		}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+p {
+    margin: 0 0 1.5em 0;
+}
+
+
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#main-header {
+    background: transparent;
+    color: black;
+    height: 100px;
+    width: 400px;
+
+}   
+
+/*
+ * Logo
+ */
+#logo-header {
+    position:absolute;
+    width: 300px;
+    height: 100px;
+    display: inline-block ;
+    left:20%;
+    top:25px;
+    
+}
+
+#salir-header{
+    position:absolute;
+    float:right;
+    top:25px;
+    font-size: 14px;
+    font-family: Helvetica;
+    color: #fff;
+    right:15%;
+    display:block;
+    
+    
+}
+    #logo-header:hover {
+        color: #0b76a6;
+    }
+    
+    #logo-header .site-desc {
+        display: block;
+        font-weight: 200;
+        font-size: 12px;
+        color: #555;
+    }
+    
+
+#container{
+
+padding-top: 10px;
+width: 1150px;
+left:0;
+margin: 20px auto;
+}
+
+
+/* == MENU == */
+#menu {
+height: 40px;
+width: 1150px;
+margin-top:20px;
+}
+#menu ul {
+list-style-type: none;
+}
+#menu li {
+display: inline;
+margin-right: 3px;
+}
+
+/* == MENU USUARIO == */
+#menu-usuario{
+height: 40px;
+width: 370px;
+left:0;
+margin-top: 20px;
+
+}
+#menu-usuario ul {
+list-style-type: none;
+}
+#menu-usuario li {
+display: inline;
+margin-right: 3px;
+}
+/* == MENU BUTTONS == */
+.menu-agenda {
+background-image: url(images/menu-pag.jpg) ;
+background-position: 0px 0px;
+width: 150px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-agenda:hover, .menu-agenda-active {
+background-image: url(images/menu-pag.jpg);
+background-position: 0px -40px;
+width: 150px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-sesiones {
+background-image: url(images/menu-pag.jpg) ;
+background-position: -160px 0px;
+width: 151px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-sesiones:hover, .menu-sesiones-active {
+background-image: url(images/menu-pag.jpg);
+background-position: -160px -40px;
+width: 151px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-clientes {
+background-image: url(images/menu-pag.jpg) ;
+background-position: -320px 0px;
+width: 151px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-clientes:hover, .menu-clientes-active {
+background-image: url(images/menu-pag.jpg);
+background-position: -320px -40px;
+width: 151px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-especialistas {
+background-image: url(images/menu-pag.jpg) ;
+background-position: -481px 0px;
+width: 220px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-especialistas:hover, .menu-especialistas-active {
+background-image: url(images/menu-pag.jpg);
+background-position: -481px -40px;
+width: 220px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-servicios {
+background-image: url(images/menu-pag.jpg) ;
+background-position: -710px 0px;
+width: 175px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-servicios:hover, .menu-servicios-active {
+background-image: url(images/menu-pag.jpg);
+background-position: -710px -40px;
+width: 175px;
+height: 40px;
+display: inline-block;
+margin-right: 3px;
+}
+
+.menu-usuarios {
+background-image: url(images/menu-pag.jpg) ;
+background-position: -895px 0px;
+width: 155px;
+height: 40px;
+display: inline-block;
+margin-right: 0px;
+}
+
+.menu-usuarios:hover, .menu-usuarios-active {
+background-image: url(images/menu-pag.jpg);
+background-position: -895px -40px;
+width: 155px;
+height: 40px;
+display: inline-block;
+margin-right: 0px;
+}
+/************ 
+//------------------------------
+// CONTENIDO
+//------------------------------
+************/
+#main-content {
+    /* background: -webkit-linear-gradient(60deg, rgb(255, 255, 255) 55%, #999 70% , rgb(0, 0, 0)); */
+    background: white;
+    width: 95%;
+    max-width: 1100px;
+    margin: 10px auto;
+    border-style:solid;
+    border-color: #f2555c;
+    border-width: 2px;
+    font-size: 150%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+#main-content header,
+    #main-content .content {
+        padding: 20px;
+        padding-top: 10px;
+        font-size: 80%;
+    }
+    
+#main-content .formulario  {
+        border-style: solid;
+        border-color: gray;
+        border-width: 2px;
+        position:relative ;
+        margin-left: 25% ;
+        padding-left: 15px;
+        
+        background-color: white;
+        width: 500px;
+
+    }
+
+#main-content .formulario_caja{
+    
+    width: 97%;
+    padding-left:10px;
+
+}
+
+#main-content .lista_usuarios{
+    
+        border-style: solid;
+        border-color: gray;
+        border-width: 2px;
+        position:relative ;
+        margin-left: 20% ;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        background-color: white;
+        width: 50%;
+        height:100%;
+        
+    }
+    
+#main-content .caja_buscar{
+    
+        border-style: solid;
+        border-color: gray;
+        border-width: 0px;
+        position:relative ;
+        margin-left: 20% ;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        background-color: white;
+        width: 50%;
+        height:100%;
+        
+    }
+    
+#main-content .caja_buscar1{
+    
+        border-style: solid;
+        border-color: gray;
+        border-width: 0px;
+        position:relative ;
+        margin-left: 17% ;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        background-color: white;
+        width: 70%;
+        height:100%;
+        
+    }
+    
+    
+#main-content .caja_titulo{
+    
+    
+    background-color:yellow;
+    margin-top:10px;
+    width:50%;
+    left: 50%;
+}
+
+#main-content .cuadro_buscar{
+   
+    background-color:white;
+    margin-top:10px;
+    width:100%;
+    padding-left:10px;
+}
+
+#main-content .cuadro_eleccion{
+    background-color: white;
+    height:35px;
+    margin-top:10px;
+}
+    
+/*-------------
+//Caja de Lista Usuarios.
+--------------*/
+
+#main-content .row.caja_completa {
+    background-color: white;
+    width: 100%;
+    padding-left:10px;
+}
+
+#main-content .row.caja_completa2 {
+    background-color: white;
+    width: 100%;
+    padding-left:10px;
+    height:90px;
+  
+}
+
+#main-content .col.col_nombre {
+    height:45px;
+    margin-top:0px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+#main-content .col.col_nombre2 {
+    height:45px;
+    margin-top:0px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#main-content .col.col_botones {
+    
+    position:relative;
+    margin-top:5px;
+}
+
+#boton_lista {
+    width:50px;
+    margin-right:10px;
+    margin-left:10px;
+}
+
+#main-content .row.caja_nombre{
+    
+    position:absolute;
+    margin-top:0;
+    padding-top:10px;
+    padding-bottom:5px;
+}
+
+#main-content .row.caja_nombre{
+    
+    position:absolute;
+    margin-top:0;
+    padding-top:10px;
+    padding-bottom:5px;
+}
+
+/************
+// Ver Usuarios
+*******/
+#main-content .field.field_ver {
+    border-top:0;
+    border-right:0;
+    border-left:0;
+    border-bottom: 1px;
+    border-style:solid;
+    border-color:black;
+    width:97%;
+    
+}
+
+/************
+//-----------------------------
+// PIE PÁGINA
+//-----------------------------
+************/
+#main-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+    #main-footer p {
+        margin: 0;
+    }
+    
+    #main-footer a {
+        color: white;
+    }
+    
+/************
+//-----------------------------
+// CALENDARIO
+//-----------------------------
+************/
+
+table{
+border: 15px solid #f2555c;
+border-collapse:collapse;
+margin-top: 0px;
+margin-left: 32%;
+}
+td{
+width: 50px;
+height: 50px;
+text-align: center;
+border: 2px solid #e2e0e0;
+font-size: 18px;
+font-weight: bold;
+}
+
+th{
+height: 50px;
+padding-bottom: 8px;
+background:#f2555c;
+font-size: 24px;
+text-align: center;
+color:white;
+}
+.prev_sign a, .next_sign a{
+color:white;
+text-decoration: none;
+}
+
+tr .week_name{ /* Cabecera de semana */ 
+font-size: 20px;
+font-weight:400;
+color:red;
+width: 10px;
+background-color: #efe8e8;
+}
+
+.highlight{
+background-color: gray  ;/*#E74C3C;*/
+color:white;
+padding-top: 0;
+
+}
